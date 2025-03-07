@@ -1,13 +1,8 @@
 import * as React from 'react';
 import { Row, Column, Text, Button, Img } from "@react-email/components";
 
-interface EmailTemplateProps {
-  firstName: string;
-}
-
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  firstName,
-}) => (
+export default function EmailTemplate() {
+  return(
     <Row>
     <Column align="center">
       <Row>
@@ -46,4 +41,5 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
       </Row>
     </Column>
   </Row>
-);
+  );
+} 
