@@ -49,6 +49,7 @@ export default function WaitlistForm() {
               <FormControl>
                 <Input placeholder="hello@gmail.com" {...field} />
               </FormControl>
+              <FormMessage></FormMessage>
             </FormItem>
           )}
         />
